@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Adefowope | Front-End Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
+      color: white;
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    .hover-zoom:hover {
+      transform: scale(1.05);
+      transition: all 0.4s ease-in-out;
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- NAVBAR -->
+  <header class="fixed w-full z-50 bg-black/40 backdrop-blur-lg">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-white">Samuel Adefowope</h1>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+      <a href="#contact" class="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700 transition">Hire Me</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center parallax"
+    style="background-image: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1600&q=80');">
+    <div class="bg-black/60 p-8 rounded-2xl">
+      <h1 class="text-5xl font-bold mb-4 animate-pulse">Hi, I'm <span class="text-blue-400">Samuel Adefowope</span></h1>
+      <p class="text-xl mb-6">Front-End Developer | UI/UX Enthusiast | Creative Coder</p>
+      <a href="#projects" class="bg-gradient-to-r from-blue-600 to-indigo-500 px-6 py-3 rounded-xl hover:scale-110 transition">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="max-w-5xl mx-auto py-20 px-6">
+    <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+    <div class="md:flex items-center gap-8">
+      <img src="images/13.png" 
+           alt="Profile" class="rounded-2xl shadow-lg w-full md:w-1/3 hover-zoom">
+      <p class="mt-6 md:mt-0 md:w-2/3 text-lg leading-relaxed">
+        I’m a passionate front-end developer who loves building visually appealing, responsive, and interactive web applications.
+        My goal is to combine design and technology to create seamless user experiences.
+        I specialize in HTML, CSS, JavaScript, React, and Tailwind CSS. I’m always eager to learn new technologies and refine my craft.
+      </p>
+    </div>
+    <div class="mt-8 text-center">
+      <a href="images/Samuel_Adefowope_Resume.pdf" download class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="bg-black/30 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Project 1 -->
+        <div class="bg-white/10 p-6 rounded-xl hover-zoom">
+          <img src="images/my portfolio.png" alt="Project 1" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+          <p>A personal website showcasing my projects and skills using React and Tailwind CSS.</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white/10 p-6 rounded-xl hover-zoom">
+          <img src="/images/buildright.png" alt="Project 2" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Landing Page Design</h3>
+          <p>Responsive landing page built with modern UI design principles and smooth scroll animations.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white/10 p-6 rounded-xl hover-zoom">
+          <img src="images/ecom.png" alt="Project 3" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">E-Commerce UI</h3>
+          <p>Interactive shopping interface with product filters and hover animations using pure CSS and JS.</p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-white/10 p-6 rounded-xl hover-zoom">
+          <img src="images/all family.png" alt="Project 4" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Family childcare</h3>
+          <p>All family childcare support, responsive design, and smooth transitions between pages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="max-w-6xl mx-auto py-20 px-6">
+    <h2 class="text-4xl font-bold mb-10 text-center">My Skills</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white/10 p-6 rounded-xl hover-zoom">HTML / CSS / JS</div>
+      <div class="bg-white/10 p-6 rounded-xl hover-zoom">React / Tailwind</div>
+      <div class="bg-white/10 p-6 rounded-xl hover-zoom">UI/UX & Animation</div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="bg-gradient-to-r from-blue-800 to-indigo-600 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+    <p class="text-lg mb-8">Have a project or idea? I’d love to collaborate with you.</p>
+    <a href="mailto:samtemsolutions@gmail.com" class="bg-white text-blue-800 px-6 py-3 rounded-lg hover:bg-gray-200 transition">Contact Me</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black/40 py-6 text-center text-sm">
+    © <span id="year"></span> Samuel Adefowope. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
